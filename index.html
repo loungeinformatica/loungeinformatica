@@ -367,7 +367,11 @@
   .phone-btn:hover{ border-color:var(--whatsapp); transform:translateY(-2px); }
   .phone-btn svg{ width:20px; height:20px; stroke:var(--whatsapp); fill:none; stroke-width:1.8; }
   /* ---------- Footer ---------- */
-  footer{ padding:36px 0; }
+  footer{ 
+    padding:36px 0; 
+    background:var(--white);
+    border-top:1px solid var(--line);
+  }
   .footer-inner{
     display:flex;
     align-items:center;
@@ -375,8 +379,15 @@
     gap:16px;
     flex-wrap:wrap;
   }
-  .footer-inner .brand-text .name{ font-size:1rem; }
-  footer .copy{ font-family:Verdana, sans-serif; font-size:0.82rem; color:var(--grey); }
+  .footer-inner .brand-text .name{ 
+    font-size:1rem; 
+    color:var(--black);
+  }
+  footer .copy{ 
+    font-family:Verdana, sans-serif; 
+    font-size:0.82rem; 
+    color:var(--grey); 
+  }
   /* ---------- Responsive ---------- */
   @media (max-width:880px){
     .hero-grid{ grid-template-columns:1fr; }
