@@ -10,14 +10,15 @@
     --bg: #0b0b0d;
     --panel: #161619;
     --panel-2: #1e1e22;
-    --line: #2a2a2f;
+    --line: #e5e5e5;
     --red: #d81f2a;
     --red-deep: #8c0f18;
     --gold: #e3a13f;
-    --white: #f3f2ef;
-    --grey: #9c9ca3;
+    --white: #ffffff;
+    --grey: #666666;
     --whatsapp: #25D366;
     --whatsapp-dark: #1da851;
+    --black: #000000;
   }
   *{ margin:0; padding:0; box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
@@ -41,9 +42,9 @@
     position:sticky;
     top:0;
     z-index:50;
-    background:rgba(11,11,13,0.86);
-    backdrop-filter:blur(10px);
+    background:var(--white);
     border-bottom:1px solid var(--line);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   }
   .header-inner{
     display:flex;
@@ -71,7 +72,7 @@
     font-size:1.18rem; 
     font-weight:700; 
     letter-spacing:0.01em; 
-    color:var(--white);
+    color:var(--black);
   }
   .brand-text .tag{ font-size:0.72rem; color:var(--grey); font-family:Verdana, sans-serif; font-weight:500; }
   .header-cta{
