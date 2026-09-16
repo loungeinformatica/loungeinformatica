@@ -176,13 +176,13 @@
     font-size:0.82rem;
     color:var(--grey);
   }
-  /* Hero graphic */
+  /* Hero visual com imagem */
   .hero-visual{
     position:relative;
     aspect-ratio:1/1;
     border-radius:20px;
     background:
-      radial-gradient(circle at 30% 20%, rgba(216,31,42,0.25), transparent 55%),
+      radial-gradient(circle at 30% 20%, rgba(216,31,42,0.15), transparent 55%),
       linear-gradient(160deg, var(--panel), #101012 70%);
     border:1px solid var(--line);
     display:flex;
@@ -190,30 +190,11 @@
     justify-content:center;
     overflow:hidden;
   }
-  .hero-visual::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
-    background-size:34px 34px;
-  }
-  .chip-glow{
-    position:relative;
-    width:130px; height:130px;
-    border-radius:18px;
-    background:linear-gradient(150deg, var(--red), var(--red-deep));
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 0 60px rgba(216,31,42,0.45);
-    animation:pulseGlow 3.6s ease-in-out infinite;
-  }
-  @keyframes pulseGlow{
-    0%,100%{ box-shadow:0 0 45px rgba(216,31,42,0.35); }
-    50%{ box-shadow:0 0 80px rgba(216,31,42,0.55); }
-  }
-  @media (prefers-reduced-motion: reduce){
-    .chip-glow{ animation:none; }
+  .hero-visual img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
   }
   /* ---------- Section shell ---------- */
   section{ padding:88px 0; }
@@ -454,9 +435,8 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="chip-glow">
-        <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9.5 3.5V7M14.5 3.5V7M9.5 17v3.5M14.5 17v3.5M3.5 9.5H7M3.5 14.5H7M17 9.5h3.5M17 14.5h3.5"/></svg>
-      </div>
+      <!-- Sua imagem aqui -->
+      <img src="minha-imagem.png" alt="Lounge Informática — Serviços">
     </div>
   </div>
 </section>
